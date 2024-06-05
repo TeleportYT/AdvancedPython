@@ -2,8 +2,8 @@
 
 def longestName():
     with open("names.txt") as file:
-        max = lambda x,y:
-        return [line.strip() for line in file]
+        return max([line.strip() for line in file],key=len)
+
 
 
 print(longestName())
